@@ -1,5 +1,8 @@
 import * as Factory from './factories'
+
+
 const lists = [];
+
 function createNewTodo(title, description, dueDate, priority, isCompleted, list) {
   const newTodo = Factory.todoFactory(title, description, dueDate, priority, isCompleted);
   list.todoList.push(newTodo);
